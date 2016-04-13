@@ -8,7 +8,7 @@
 //ofstream: write on files
 //ifstream: read from files
 //fstream: read and write from/to files
-//good morning world. Ry Ky Ke in DA HOUSE!!!!!
+
 using namespace std;
 ifstream myFile; // test
 string excuse;
