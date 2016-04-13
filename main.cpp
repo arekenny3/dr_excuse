@@ -25,6 +25,7 @@ int main()
 	cout << "3: New excuse \n" << endl;
 	cin >> choice;
 	statement(choice);
+	cout << "Hello friend " << excuse << endl;
 
 	//cout << excuse << endl;
 	cin.clear();
@@ -32,44 +33,44 @@ int main()
 	cin.get();
 	return 0;
 }
-int statement(int choice) 
+int statement(int choice)
 {
 	ifstream myFile("book.txt", ifstream::in);
 
-	switch (choice)		
+	switch (choice)
 	{
-		case 1:
-				cout << "You chose 1: List: \n . \n .. \n ..." << endl;
-				if (myFile.is_open())
-				{
-					while (getline(myFile, line))
-					{
-						cout << line << '\n';
-					}
-					myFile.close();
-				}
+	case 1:
+		cout << "You chose 1: List: \n . \n .. \n ..." << endl;
+		if (myFile.is_open())
+		{
+			while (getline(myFile, line))
+			{
+				cout << line << '\n';
+			}
+			myFile.close();
+		}
 
-				else{
-					cout << "Program code 526 \n Unable to open file";
-				}
-					break;
+		else{
+			cout << "Program code 526 \n Unable to open file";
+		}
+		break;
 
-		case 2:
-			//myFile.open("book.txt");
-			//myFile << "Reading this to a file .\n " << endl;
-			//myFile.close();
-			break;
-		case 3:
-			cout << "You chose 3: ...... " << endl;
-			cout << "Type in your statment " << endl;
+	case 2:
+		//myFile.open("book.txt");
+		//myFile << "Reading this to a file .\n " << endl;
+		//myFile.close();
+		break;
+	case 3:
+		cout << "You chose 3: ...... " << endl;
+		cout << "Type in your statment " << endl;
 		//	cin >> excuse;
-			cin.ignore();
-			getline(cin, excuse);
+		cin.ignore();
+		getline(cin, excuse);
 
 
-			break;
-		default:
-			break;
+		break;
+	default:
+		break;
 	}
 	return 1;
 }
