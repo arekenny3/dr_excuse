@@ -62,7 +62,8 @@ int statement(int choice)
 		case 3:
 			cout << "You chose 3: ...... " << endl;
 			cout << "Type in your statment " << endl;
-			cin >> excuse;
+		//	cin >> excuse;
+			cin.ignore();
 			getline(cin, excuse);
 
 
