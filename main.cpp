@@ -10,7 +10,7 @@
 //fstream: read and write from/to files
 
 using namespace std;
-ifstream myFile; // test
+ifstream myFile;
 string excuse;
 string output;
 int choice;
